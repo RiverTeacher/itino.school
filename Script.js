@@ -109,7 +109,7 @@ window.onload = function () {
 				zoyamaImg.x += 10;						//ただ移動します
 			}
 			if (state == 5) {							//状態５（point１２以上から）　 ｙ軸が毎フレーム毎に変化する
-				zoyamaImg.x += 20;						//移動します。
+				zoyamaImg.x += 17;						//移動します。
 				zoyamaImg.y = Math.random() * 350;			//ｙ座標の位置を枚フレーム毎にランダム決定
 			}
 
@@ -122,7 +122,8 @@ window.onload = function () {
 				game.pushScene(endScene);				//endSceneシーンを読み込ませる
 
 				//ゲームオーバー後のテキスト表示
-				gameOverText.text = "あなたが倒した市野さんは：" + point + "人❤";				//テキストに文字表示 
+				gameOverText.text = "あなたが倒した市野さんは：" + point + "人❤ばれないように気をつけろよ★";				//テキストに文字表示 
+				coment.text = "やるやん★次は何回いく？";
 			}
 
 		};
@@ -136,6 +137,7 @@ window.onload = function () {
 
 		//GAMEOVER
 		const gameOverText = new Label(); 					//テキストはLabelクラス
+		const coment = new Label();
 		gameOverText.font = "20px Meiryo";				//フォントはメイリオ 20px 変えたかったらググってくれ
 		gameOverText.color = 'rgba(255,255,255,1)';		//色　RGB+透明度　今回は白
 		gameOverText.width = 400;							//横幅指定　今回画面サイズ400pxなので、width:400pxだと折り返して二行目表示してくれる
