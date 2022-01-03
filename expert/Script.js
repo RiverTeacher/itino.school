@@ -15,11 +15,6 @@ window.onload = function () {
 	const zoyamaImgUrl = "zoyama.png";						//game.htmlからの相対パス
 	game.preload([zoyamaImgUrl]);					//データを読み込んでおく
 
-	//リトライボタン
-	const retryImgUrl = "retry.png";						//game.htmlからの相対パス
-	game.preload([retryImgUrl]);					//データを読み込んでおく
-
-
 
 	//読み込み終わり
 	/////////////////////////////////////////////////
